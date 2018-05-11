@@ -1,11 +1,11 @@
-	Combat Assault - Readme
+	WARCONTEXT - Readme
 
 	Description:
-	Combat Assault is a military gaming engine
+	WARCONTEXT is a military simulator engine
 
 	Author:  code34 nicolas_boiteux@yahoo.fr
 
-	Copyright (C) 2015-2018 Nicolas BOITEUX 
+	Copyright (C) 2007-2018 Nicolas BOITEUX 
 	
 	This program is free software: you can redistribute it and/or modify
 	it under the terms of the GNU General Public License as published by
