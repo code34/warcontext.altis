@@ -1,0 +1,48 @@
+Author = $STR_MISSION_AUTHOR;
+onLoadName = $STR_MISSION_TITLE;
+loadScreen = "loading.jpg";
+OnLoadMission = $STR_MISSION_TITLE;
+onLoadMissionTime = 1;
+Respawn = "BASE";
+RespawnDelay = 10;
+RespawnDialog = 1;
+respawnTemplatesWest[] = {"Spectator"};
+DisabledAI = true;
+joinUnassigned = 0;
+
+class Header
+{
+	gameType=COOP;
+	minPlayers=1;
+	maxPlayers=40;
+};
+
+#include "ui\define.hpp"
+#include "ui\standard_controls.hpp"
+#include "ui\deploy.hpp"
+#include "ui\intromenu.hpp"
+#include "ui\mission_params.hpp"
+#include "ui\deployvehicle.hpp"
+
+class CfgDebriefing
+{  
+	class End1
+	{
+		title = "Mission Completed";
+		subtitle = "";
+		description = "You successfully defended Altis and neutralized the enemies!";
+		pictureBackground = "";
+		picture = "";
+		pictureColor[] = {0.0,0.3,0.6,1};
+	};
+
+	class EpicFail
+	{
+		title = "Mission Failed";
+		subtitle = "";
+		description = "You failed to defended Altis against the enemies!";
+		pictureBackground = "";
+		picture = "";
+		pictureColor[] = {0.0,0.3,0.6,1};
+	};
+};
