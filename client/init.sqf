@@ -32,6 +32,7 @@
 
 	diag_log "Waiting player is alive ...";
 	waitUntil {alive player && !(isNull player);};
+	disableUserInput true;
 
 	while { (getMarkerPos "globalbase") isEqualTo [0,0,0] } do { 
 		sleep 0.1; 
@@ -73,6 +74,7 @@
 	};
 	
 	15203 cutText ["","PLAIN", 0];
+	disableUserInput false;
 	[] call WC_fnc_introcam;
 	
 	_size = getNumber (configfile >> "CfgWorlds" >> worldName >> "mapSize");
@@ -87,10 +89,6 @@
 	[] execVM "real_weather\real_weather.sqf";
 
 	setGroupIconsVisible [false,false];
-	disableUserInput false;
-	disableUserInput true;
-	disableUserInput false;
-
 	if(wcambiant == 2) then {
 		enableEnvironment false;
 		enableSentences false;
@@ -214,8 +212,6 @@
 		};
 	};
 
-	// MAIN LOOP
-	while {true} do {
 		if(wcspeedcoeef == 1) then {
 			player setAnimSpeedCoef 1.2;
 		};
@@ -242,35 +238,3 @@
 		["setColor", "ColorGreen"] spawn _mark;
 		["setType", "mil_arrow2"] spawn _mark;
 		["setSize", [0.5,0.5]] spawn _mark;
-		
-		_body = player;
-		_group = group player;
-		waituntil {!alive player};
-		_view = cameraView;
-		if(isnil "killer") then { killer = _body;};
-		if(isNull killer) then  { killer = _body;};
-
-		wccam = "camera" camCreate (position killer);
-		wccam cameraEffect ["internal","back"];
-	
-		wccam camsettarget killer;
-		wccam camsetrelpos [-10,-10,5];
-		wccam CamCommit 0;
-
-		wccam camsettarget _body;
-		wccam camCommand "inertia on";
-		wccam camSetPos [((position _body) select 0) + 5, ((position _body) select 1) + 5, 10];
-		wccam CamCommit 5;
-
-		"detach" spawn _mark;
-		["setColor", "ColorRed"] spawn _mark;
-		["setPos", position _body] spawn _mark;
-		["setType", "mil_flag"] spawn _mark;
-		["draw", "ColorRed"] spawn _mark;
-
-		waituntil {alive player};
-		deletevehicle _body;
-
-		wccam cameraEffect ["terminate","back"];
-		camDestroy wccam;
-	};
