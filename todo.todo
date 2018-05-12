@@ -1,0 +1,50 @@
+Listes des fonctionnalitées à implémenter dans warcontext
+
+Objectif du WARCONTEXT:
+Le moteur WARCONTEXT doit délivrer un socle de base pour permettre de créer des missions MILSIM. Ce socle s'adresse exclusivement aux équipes qui font de l'entrainement militaire sur ARMA. Ce socle ne s'adresse pas aux joueurs uniques. Le but du socle est d'améliorer le déplacement des troupes sur un théatre de guerre dans un environnement réel.
+
+Le socle doit permettre de s'entrainer sur ces différents points:
+  ☐ Identification de la mission
+  ☐ Organisation des squads et du matériel
+  ☐ Définition des zones d'insertion, d'extraction, evasion
+  ☐ Deception de l'enemi
+  ☐ Reconnaissance sur le terrain
+  ☐ Définition des opérations à mener pour atteindre les objectifs
+
+GESTION DES INTEL:
+Military intelligence is a military discipline that uses information collection and analysis approaches to provide guidance and direction to assist commanders in their decisions. This aim is achieved by providing an assessment of data from a range of sources, directed towards the commanders' mission requirements or responding to questions as part of operational or campaign planning. To provide an analysis, the commander's information requirements are first identified, which are then incorporated into intelligence collection, analysis, and dissemination. Areas of study may include the operational environment, hostile, friendly and neutral forces, the civilian population in an area of combat operations, and other broader areas of interest.[1] Intelligence activities are conducted at all levels, from tactical to strategic, in peacetime, the period of transition to war, and during a war itself.Most governments maintain a military intelligence capability to provide analytical and information collection personnel in both specialist units and from other arms and services. The military and civilian intelligence capabilities collaborate to inform the spectrum of political and military activities. Personnel performing intelligence duties may be selected for their analytical abilities and personal intelligence before receiving formal training.
+
+  Déclinaison des intels:
+   ☐ les intels sont des sources d'informations qui permettent déclencher des évènements
+     ☐ les intels pourraient etre délivré par des civils, des espions, des militaires, des diplomates/politiciens
+     ☐ les intels pourraient etre des objets : valise, ordinateur, papier
+     ☐ les intels pourraient être composés de plusieurs intels pour être reconstitués et intègres (exemple des clefs qui donnent accès à des informations, des plans divisés en plusieurs parties)
+     ☐ les intels pourraient être des traces : empreintes de vehicules, de personnes, enregistrement video, audio, des photos
+     ☐ les intels peuvent être des cartes, photos satellites
+     ☐ les intels peuvent etre des renseignements militaires: ordre de battaille enemi, localisation de troupes, description des capacités énemies
+     ☐ les intels peuvent être des renseignements sur les zones cibles, les routes à utiliser pour s'infiltrer
+
+  Les intels peuvent :
+   ☐ dévoiler des nouveaux sites sur la carte
+     ☐ les sites peuvent etre des sites de ressources (petrol, gaz, uranium, autre)
+     ☐ les sites peuvent etre des sites d'équipements (armes, prototype)
+     ☐ les sites peuvent etre des sites de stockage de vehicules
+     ☐ les sites peuvent etre des sites de défense (anti air, radar)
+   ☐ faire progresser le scénario
+     ☐ en commandant les troupes enemies
+     ☐ en donnant des preuves
+     ☐ en dévoilant des nouveaux personnages
+     ☐ en dévoilant des nouveaux enjeux
+     ☐ en donnant de fausses informations (contre espionnage, trap)
+     ☐ en espionnant et infiltrant les alliés
+     ☐ en receivant des informations :
+       ☐ les informations peuvent être vrai
+       ☐ les informations peuvent etre fausses (deceptions) :
+         ☐ fausses opérations amies sur des cibles non prioritaire
+         ☐ fausses capacités amies
+         ☐ fausses communications radio
+         ☐ fausses insertions
+         ☐ augmentation des vols au dessus d'objectif non prioritaire
+
+GESTION DE LA BASE:
+  Il n'y a pas de base à propement parlé. Tous l'environnement de la mission doit être construit par l'équipe qui va l'utiliser. Ainsi l'équipe sera en charge de placer les objets: véhicules, caisse d'armes, placer les scripts sur les véhicules, les zones de servicing. La mission sera livrée avec un seul et unique joueur pour lancer l'ensemble des scripts. Il n'y a pas de scripts de respawn, pas de scripts de heal.
