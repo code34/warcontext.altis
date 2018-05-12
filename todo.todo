@@ -3,6 +3,9 @@ Listes des fonctionnalitées à implémenter dans warcontext
 Objectif du WARCONTEXT:
 Le moteur WARCONTEXT doit délivrer un socle de base pour permettre de créer des missions MILSIM. Ce socle s'adresse exclusivement aux équipes qui font de l'entrainement militaire sur ARMA. Ce socle ne s'adresse pas aux joueurs uniques. Le but du socle est d'améliorer le déplacement des troupes sur un théatre de guerre dans un environnement réel.
 
+source: 
+  https://www.globalsecurity.org/military/library/policy/army/fm/7-85/ch4.htm
+
 Le socle doit permettre de s'entrainer sur ces différents points:
   ☐ Identification de la mission
   ☐ Organisation des squads et du matériel
